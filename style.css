@@ -1,0 +1,190 @@
+:root {
+    --Web-Neutral-900: #000000;
+    --Web-Neutral-100: #FFFFFF;
+    --Web-Neutral-200: #F2F2F2;
+    --Web-Neutral-300: #E0E0E0;
+    --Web-Neutral-400: #A0A0A0;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("./fonts/Inter_18pt-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    color: var(--Web-Neutral-900, #000);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("./fonts/Inter_18pt-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    color: var(--Web-Neutral-900, #000);
+}
+
+a {
+    color: var(--Web-Neutral-900, #000);
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    align-items:center; 
+    padding: 20px 40px;
+    background: var(--Web-Neutral-100, #FFF);
+    font-family: Inter;
+    gap: 35px;
+}
+
+
+.header .logo {
+    border-radius: 10px;
+}
+
+.header .flex-nav {
+    display: flex;
+    gap: 20px;
+}    
+
+.header .flex-nav a {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+
+    gap: 20px;
+}    
+
+.header .flex-nav a:hover {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000; 
+}
+
+.header .flex-button {
+    display: flex;
+    justify-content: center;
+    background-color: var(--Web-Neutral-900);
+    color: var(--Web-Neutral-100);
+    padding: 20px;
+    margin-left: auto;
+}
+
+body {
+    min-height: 100vh;	
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    background: var(--Web-Neutral-100, #FFF);
+    padding: 100px 40px;
+    font-family: Inter;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left-section h2 {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    color: var(--Web-Neutral-900);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h2 {
+    color: var(--Web-Neutral-900);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h3 {
+    color: var(--Web-Neutral-200);
+    text-align: right;
+    font-family: Inter;
+    font-size: 348px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+button {
+    padding: 20px;
+    color: var(--Web-Neutral-100, #FFF);
+    background: var(--Web-Neutral-900, #000);
+}
+
+footer {
+    background: var(--Web-Neutral-200);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 28px 40px;
+    
+}
+
+footer .company {
+    padding: 28px 0px 28px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid var(--Web-Neutral-300);
+    border-left: inherit;
+    border-right: inherit;
+}
+
+footer .name-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+} 
+
+footer .sub-footer {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between
+}
+
+footer .politic {
+    display: inline-flex;
+    gap: 20px;
+}
+
+footer h4 {
+    color: var(--Web-Neutral-900, #000);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+footer h5 {
+    color: var(--Web-Neutral-900, #000);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+footer h6 {
+    color: var(--Web-Neutral-400, #A0A0A0);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
