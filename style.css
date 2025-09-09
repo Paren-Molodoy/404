@@ -27,105 +27,94 @@ a {
     text-decoration: none;
 }
 
+.button {
+    background-color: var(--Web-Neutral-900);
+    color: var(--Web-Neutral-100);
+    padding: 20px;
+}
+
 .header {
     display: flex;
     align-items:center; 
     padding: 20px 40px;
+    margin-bottom: 100px;
     background: var(--Web-Neutral-100, #FFF);
     font-family: Inter;
     gap: 35px;
 }
 
 
-.header .logo {
+header .logo {
     border-radius: 10px;
 }
 
-.header .flex-nav {
+header .nav {
     display: flex;
     gap: 20px;
 }    
 
-.header .flex-nav a {
-    display: flex;
+header .nav a {
     font-size: 16px;
     font-weight: 400;
-
-    gap: 20px;
 }    
 
-.header .flex-nav a:hover {
+header .nav a:hover {
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000; 
-}
+/*  -webkit-text-stroke-width: 1px; Без этих параметров ховер не такой как на макете, нужно подумать как повторить
+    -webkit-text-stroke-color: #000; */
+} 
 
-.header .flex-button {
-    display: flex;
-    justify-content: center;
-    background-color: var(--Web-Neutral-900);
-    color: var(--Web-Neutral-100);
-    padding: 20px;
+header .button {
     margin-left: auto;
 }
 
 body {
     min-height: 100vh;	
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-main {
-    background: var(--Web-Neutral-100, #FFF);
-    padding: 100px 40px;
-    font-family: Inter;
 }
 
 section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: Inter;
+    background: var(--Web-Neutral-100, #FFF);
+    font-family: Inter;
 }
 
-.left-section {
+section .left-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.left-section h2 {
-    margin-top: 20px;
-    margin-bottom: 60px;
-}
-
-h1 {
+section .left-section__title {
     color: var(--Web-Neutral-900);
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
 }
 
-h2 {
+section .left-section__text {
+    margin-top: 20px;
+    margin-bottom: 60px;
     color: var(--Web-Neutral-900);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
 }
 
-h3 {
+section .right-section {
+    margin-top: auto;
+    margin-bottom: auto;
     color: var(--Web-Neutral-200);
     text-align: right;
     font-family: Inter;
     font-size: 348px;
     font-style: normal;
     font-weight: 400;
-}
-
-button {
-    padding: 20px;
-    color: var(--Web-Neutral-100, #FFF);
-    background: var(--Web-Neutral-900, #000);
 }
 
 footer {
@@ -137,34 +126,22 @@ footer {
 }
 
 footer .company {
-    padding: 28px 0px 28px 0px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    border: 1px solid var(--Web-Neutral-300);
-    border-left: inherit;
-    border-right: inherit;
-}
+    padding: 28px 0px 28px 0px;
+    border-top: 1px solid var(--Web-Neutral-300);
+    border-bottom: 1px solid var(--Web-Neutral-300);
+}    
 
-footer .name-company {
+footer .company__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
 } 
 
-footer .sub-footer {
-    margin-top: 28px;
-    display: flex;
-    justify-content: space-between
-}
-
-footer .politic {
-    display: inline-flex;
-    gap: 20px;
-}
-
-footer h4 {
+footer .company__name {
     color: var(--Web-Neutral-900, #000);
     text-align: center;
     font-family: Inter;
@@ -173,16 +150,27 @@ footer h4 {
     font-weight: 500;
 }
 
-footer h5 {
-    color: var(--Web-Neutral-900, #000);
+footer .sub-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+footer .copyright-link {
+    display: flex;
+    gap: 20px;
+}
+
+footer .copyright-link a {
+    color: var(--Web-Neutral-400, #A0A0A0);
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
 }
 
-footer h6 {
-    color: var(--Web-Neutral-400, #A0A0A0);
+footer h5 {
+    color: var(--Web-Neutral-900, #000);
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
