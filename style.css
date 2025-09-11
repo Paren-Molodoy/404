@@ -20,6 +20,14 @@
     font-style: normal;
 }
 
+body {
+    height: 100vh;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Inter;
+}
+
 a {
     color: var(--Web-Neutral-900);
     text-decoration: none;
@@ -40,7 +48,6 @@ a {
     padding: 20px 40px;
     margin-bottom: 100px;
     background: var(--Web-Neutral-100);
-    font-family: Inter;
     gap: 35px;
 }
 
@@ -55,25 +62,18 @@ a {
     gap: 20px;
 }    
 
-.header__nav a {
+.header__nav-item {
     font-size: 16px;
     font-weight: 400;
-    transition: all 100ms;
+    transition: text-shadow 0.1s;
 }    
 
-.header__nav a:hover {
+.header__nav-item:hover {
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 } 
 
 .header__buttons {
     margin-left: auto;
-}
-
-body {
-    height: 100vh;
-    max-width: 1920px;
-    width: 100%;
-    margin: 0 auto;
 }
 
 .section {
@@ -83,7 +83,6 @@ body {
     margin-bottom: 100px;
     padding-left: 40px;
     padding-right: 40px;
-    font-family: Inter;
     background: var(--Web-Neutral-100);
 }
 
@@ -96,7 +95,6 @@ body {
 .left-section__title {
     color: var(--Web-Neutral-900);
     font-size: 64px;
-    font-style: normal;
     font-weight: 400;
 }
 
@@ -105,7 +103,6 @@ body {
     margin-bottom: 60px;
     color: var(--Web-Neutral-900);
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
 }
 
@@ -114,9 +111,7 @@ body {
     margin-bottom: auto;
     color: var(--Web-Neutral-200);
     text-align: right;
-    font-family: Inter;
     font-size: 348px;
-    font-style: normal;
     font-weight: 400;
 }
 
@@ -137,19 +132,26 @@ body {
     border-bottom: 1px solid var(--Web-Neutral-300);
 }    
 
-.company-item {
+.company__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    position: relative;
 } 
 
-.company-name {
+.company__link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.company__name {
     color: var(--Web-Neutral-900);
     text-align: center;
-    font-family: Inter;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
 }
 
@@ -162,25 +164,20 @@ body {
 
 .sub-footer__copyright {
     color: var(--Web-Neutral-900);
-    font-family: Inter;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
 }
 
 .sub-footer__link {
     color: var(--Web-Neutral-400);
-    font-family: Inter;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
 }
 
 .sub-footer__xpage {
     color: var(--Web-Neutral-900);
-    font-family: Inter;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     margin-left: auto;
 }
+
