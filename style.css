@@ -45,29 +45,27 @@ a {
 }
 
 
-header .logo {
+.header__logo {
     border-radius: 10px;
     height: 50px;
 }
 
-header .nav {
+.header__nav {
     display: flex;
     gap: 20px;
 }    
 
-header .nav a {
+.header__nav a {
     font-size: 16px;
     font-weight: 400;
     transition: all 100ms;
 }    
 
-header .nav a:hover {
+.header__nav a:hover {
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-/* -text-stroke-width: 1px; 
-    -text-stroke-color: #000; */
 } 
 
-header .button {
+.header__buttons {
     margin-left: auto;
 }
 
@@ -89,20 +87,20 @@ body {
     background: var(--Web-Neutral-100);
 }
 
-section .left-section {
+.left-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-section .left-section__title {
+.left-section__title {
     color: var(--Web-Neutral-900);
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
 }
 
-section .left-section__text {
+.left-section__text {
     margin-top: 20px;
     margin-bottom: 60px;
     color: var(--Web-Neutral-900);
@@ -111,7 +109,7 @@ section .left-section__text {
     font-weight: 400;
 }
 
-section .right-section {
+.right-section__title {
     margin-top: auto;
     margin-bottom: auto;
     color: var(--Web-Neutral-200);
@@ -122,7 +120,7 @@ section .right-section {
     font-weight: 400;
 }
 
-footer {
+.footer {
     background: var(--Web-Neutral-200);
     display: flex;
     flex-direction: column;
@@ -130,7 +128,7 @@ footer {
     
 }
 
-footer .company {
+.footer__company {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -139,14 +137,14 @@ footer .company {
     border-bottom: 1px solid var(--Web-Neutral-300);
 }    
 
-footer .company__item {
+.company-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
 } 
 
-footer .company__name {
+.company-name {
     color: var(--Web-Neutral-900);
     text-align: center;
     font-family: Inter;

@@ -5,74 +5,86 @@
     <title>Страница не найдена</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./img/Favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
 </head>
 <body>
     <header class="header">
-        <a href="#">
-            <img src="./img/Logo.webp" class="logo" alt="alt" width="120" height="50">
-        </a>
-        <nav class="nav">
-            <a href="#">Мужское</a>
-            <a href="#">Женское</a>
-            <a href="#">Дети</a>
-            <a href="#">Аксессуары</a>
-            <a href="#">Новинки</a>
-            <a href="#">Скидки</a>
-        </nav>
+      <a class="header__logo" href="#">
+        <img class="logo" src="./img/Logo.webp" alt="alt" width="120" height="50">
+      </a>
+      <nav class="header__nav">
+        <a class="header__nav-item" href="#">Мужское</a>
+        <a class="header__nav-item" href="#">Женское</a>
+        <a class="header__nav-item" href="#">Дети</a>
+        <a class="header__nav-item" href="#">Аксессуары</a>
+        <a class="header__nav-item" href="#">Новинки</a>
+        <a class="header__nav-item" href="#">Скидки</a>
+      </nav>
+      <div class="header__buttons">
         <button class="button">Войти</button>
+      </div>    
     </header>
     <main>
-        <section class="section">
-          <div class="left-section">
-           <h1 class="left-section__title">Страница<br> не найдена</h1> 
-           <h2 class="left-section__text">Страница, которую вы ищите, не существуеет<br> или была удалена. Этот блок должен быть сверстан на <br>флексах</h2>
-           <button class="button">На главную страницу</button> 
-          </div>  
-          <h3 class="right-section">404</h3>
-        </section> 
+      <section class="section">
+        <div class="left-section">
+          <h1 class="left-section__title">Страница<br> не найдена</h1> 
+          <div class="left-section__text">Страница, которую вы ищите, не существуеет<br> или была удалена. Этот блок должен быть сверстан на <br>флексах</div>
+          <a class="button" href="#">На главную страницу</a> 
+        </div>
+        <div class="right-section"> 
+          <div class="right-section__title">404</div>
+        </div>   
+      </section> 
     </main>
-    <footer>
-       <div class="company">
-          <a href="#" class="company__item">
+    <footer class="footer">
+       <div class="footer__top"> 
+         <div class="footer__company company"> 
+          <a href="#" class="company-item">
             <img src="./img/Company-name.webp" alt="alt" width="135" height="90">
-            <h4 class="company__name">Company Name</h4>
+            <h4 class="company-name">Company Name</h4>
           </a>
-          <a href="#" class="company__item">
+          <a href="#" class="company-item">
             <img src="./img/Company-name.webp" alt="alt" width="135" height="90">
-            <h4 class="company__name">Company Name</h4>
+            <h4 class="company-name">Company Name</h4>
           </a>
-          <a href="#" class="company__item">
+          <a href="#" class="company-item">
             <img src="./img/Company-name.webp" alt="alt" width="135" height="90">
-            <h4 class="company__name">Company Name</h4>
+            <h4 class="company-name">Company Name</h4>
           </a>
-          <a href="#" class="company__item">
+          <a href="#" class="company-item">
             <img src="./img/Company-name.webp" alt="alt" width="135" height="90">
-            <h4 class="company__name">Company Name</h4>
+            <h4 class="company-name">Company Name</h4>
           </a>
-          <a href="#" class="company__item">
+          <a href="#" class="company-item">
             <img src="./img/Company-name.webp" alt="alt" width="135" height="90">
-            <h4 class="company__name">Company Name</h4>
+            <h4 class="company-name">Company Name</h4>
           </a>
-          <a href="#" class="company__item">
+          <a href="#" class="company-item">
             <img src="./img/Company-name.webp" alt="alt" width="135" height="90">
-            <h4 class="company__name">Company Name</h4>
+            <h4 class="company-name">Company Name</h4>
           </a>
-          <a href="#" class="company__item">
+          <a href="#" class="company-item">
             <img src="./img/Company-name.webp" alt="alt" width="135" height="90">
-            <h4 class="company__name">Company Name</h4>
+            <h4 class="company-name">Company Name</h4>
           </a>
-          <a href="#" class="company__item">
+          <a href="#" class="company-item">
             <img src="./img/Company-name.webp" alt="alt" width="135" height="90">
-            <h4 class="company__name">Company Name</h4>
+            <h4 class="company-name">Company Name</h4>
           </a>
         </div> 
+      </div>
+      <div class="footer__bottom sub-footer"> 
         <div class="sub-footer">
           <span class="sub-footer__copyright">© 2024 «Company Name»</span>  
           <a href="#" class="sub-footer__link">Политика конфиденциальности</a>   
           <a class="sub-footer__link" href="#">Политика обработки персональных данных</a> 
           <a class="sub-footer__xpage" href="#">Сделано в Xpage</a>  
         </div>
+      </div>   
     </footer>    
 </body>
 </html>
