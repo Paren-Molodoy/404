@@ -93,7 +93,7 @@ body {
     margin-left: auto;
 }
 
-.section {
+.section.section--flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -103,7 +103,27 @@ body {
     background: var(--Web-Neutral-100);
 }
 
-.left-section {
+.left-section.section--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section.section--grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    align-items: center;
+    margin-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.section--grid .left-section.section--grid {
+    justify-self: start;
+}
+
+.left-section.section--grid {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
