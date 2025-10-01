@@ -46,7 +46,7 @@ body {
     transition: linear 0.5s;
 }
 
-.button.cookies_button{
+.button.button--secondary{
     border: 1px solid var(--Web-Neutral-900);
     background-color: var(--Web-Neutral-100);
     color: var(--Web-Neutral-900);
@@ -60,7 +60,7 @@ body {
     .button:hover {
         background-color: var(--Web-Neutral-900); 
     }
-    .button.cookies_button {
+    .button.button--secondary {
         background-color: var(--Web-Neutral-100);
     }
 }
@@ -94,7 +94,7 @@ body {
     font-size: 14px;
 }
 
-.link.cookie_link {
+.link.cookie__link {
     color: var(--Web-Neutral-500);
 }
 
@@ -342,7 +342,7 @@ body {
 
 @keyframes slideUp {
     from {
-        transform: translateY(150px);
+        transform: translateY(calc(100% + 29px));
     }
     to {
         transform: translateY(0px);
@@ -359,11 +359,11 @@ body {
         transform: translateY(0px);
     }
     to {
-        transform: translateY(150px);
+        transform: translateY(calc(100% + 29px));
     }
 }
 
-.cookies_text {
+.cookies__text {
     font-size: 16px;
     font-weight: 400;
     color: var(--Web-Neutral-900);
@@ -381,7 +381,7 @@ body {
         bottom: 15px; 
     }
 
-    .button.cookies_button {
+    .button.cookies__button {
         width: 100%;
     }
 }
